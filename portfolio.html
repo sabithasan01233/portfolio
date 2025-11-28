@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabit Hasan - Data Specialist Portfolio</title>
+  <link rel="icon" href="https://via.placeholder.com/32" type="image/x-icon">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --bg-light: #ffffff;
+      --card: #161b22;
+      --card-light: #f4f4f4;
+      --text: #e6edf3;
+      --text-light: #222;
+      --primary: #58a6ff;
+      --glow: #58a6ff55;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: 0.4s;
+    }
+
+    body.light {
+      background: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--card);
+      transition: 0.3s;
+    }
+    body.light header {
+      background: var(--card-light);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: var(--primary);
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid var(--primary);
+      transition: transform 0.3s;
+    }
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #30363d;
+      transition: 0.3s, box-shadow 0.3s;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 20px var(--glow);
+      transform: translateY(-5px);
+    }
+
+    body.light .card {
+      background: var(--card-light);
+      border: 1px solid #ccc;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);} 
+      to {opacity: 1; transform: translateY(0);} 
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px var(--glow);
+      transition: 0.3s;
+    }
+    .toggle-btn:hover {
+      box-shadow: 0 0 20px var(--glow);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #30363d;
+      margin-top: 40px;
+      color: #8b949e;
+      transition: 0.3s;
+    }
+    body.light .footer {
+      border-top: 1px solid #ccc;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Theme</button>
+
+  <header>
+    <img src="https://via.placeholder.com/150" alt="Profile Photo" />
+    <h1>Sabit Hasan</h1>
+    <p>Data Entry • Data Mining • Web Scraping • Product Listing • Data Analytics</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am a Data Specialist skilled in Data Entry, Web Scraping, Data Mining, Data Cleaning, and E-commerce Product Listing. I deliver accurate, clean, and well-organized datasets to international clients.</p>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="card-container">
+      <div class="card">Data Entry (Excel / Google Sheets)</div>
+      <div class="card">Web Scraping & Data Mining</div>
+      <div class="card">Data Cleaning & Formatting</div>
+      <div class="card">Product Listing (Shopify / WooCommerce)</div>
+      <div class="card">Python (Pandas, Matplotlib)</div>
+      <div class="card">SQL & Database Management</div>
+      <div class="card">Dashboard Design (Power BI, Excel)</div>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Titanic Data Analysis</h3>
+        <p>Performed EDA & statistical insights to identify survival patterns using Python and Pandas.</p>
+      </div>
+      <div class="card">
+        <h3>Weather Dashboard</h3>
+        <p>Designed a Power BI dashboard to visualize real-time temperature, humidity, and weather patterns.</p>
+      </div>
+      <div class="card">
+        <h3>E-commerce Product Scraper</h3>
+        <p>Developed a Python script to scrape product data from multiple e-commerce websites and generate CSV reports.</p>
+      </div>
+      <div class="card">
+        <h3>Sales Data Cleaning</h3>
+        <p>Cleaned and standardized 50k+ sales records for an international client, improving reporting accuracy.</p>
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> sabithasan01233@gmail.com</p>
+      <p><strong>Phone:</strong> +8801954824994</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/i-am-sabit-hasan/" target="_blank">Click Here</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/sabithasan01233" target="_blank">Click Here</a></p>
+    </div>
+  </section>
+
+  <div class="footer">© 2025 Sabit Hasan — All Rights Reserved</div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
